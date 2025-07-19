@@ -52,3 +52,7 @@ async def predict(file: UploadFile = File(...)):
     
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
+
+@app.get('/health')
+async def health_check():
+    return JSONResponse(content={"status": "healthy"})
