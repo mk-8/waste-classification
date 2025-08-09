@@ -6,3 +6,4 @@ numpy==1.26.4
 uvicorn==0.35.0
 gunicorn==23.0.0
 python-multipart
+boto3

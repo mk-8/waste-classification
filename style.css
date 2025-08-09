@@ -1,0 +1,123 @@
+* {
+      box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+input[type="file"] {
+    margin-top: 20px;
+}
+
+
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* General styling for the form holding the questions */
+#result form {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* Style for the question text itself */
+#result form p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Common style for all feedback and choice buttons */
+.feedback-btn, .choice-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.feedback-btn:hover, .choice-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Specific style for the 'No' button to give it a different color */
+.feedback-btn:last-of-type {
+    background-color: red;
+}
+
+.feedback-btn:last-of-type:hover {
+    background-color: #ca0404;
+}
+
+/* Creates a grid for the 10 choices so they wrap nicely */
+.choices-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+    .container {
+    margin: 20px;
+    padding: 15px;
+    }
+
+    h1 {
+    font-size: 1.5rem;
+    }
+
+    button {
+    width: 100%;
+    }
+}
+
+
